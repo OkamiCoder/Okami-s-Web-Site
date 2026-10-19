@@ -1,3 +1,6 @@
+<p>
+   <img src="./assets/site-banner.png" alt="site banner" width="50%">
+</p>
 # 🌐 Okami-s-Web-Site
 
 My portfolio website, showcasing my skills and contact information 💻
