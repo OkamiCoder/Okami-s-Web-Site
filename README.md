@@ -1,5 +1,5 @@
 <p>
-   <img src="./assets/site-banner.png" alt="site banner" width="70%">
+   <img src="./assets/site-banner.png" alt="site banner" width="80%">
 </p>
 # 🌐 Okami-s-Web-Site
 
