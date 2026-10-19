@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="author" content="OkamiCoder">
+<title>OkamiCoder — Hello, friend!</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/space-grotesk@5.0.0/index.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5.0.0/index.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="style.css" />
+<base target="_blank">
+</head>
+<body>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<canvas id="particles" aria-hidden="true"></canvas>
+
+<div class="noise" aria-hidden="true"></div>
+
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <span class="dot" aria-hidden="true"></span>
+  <a href="#home" data-link="home">home</a>
+  <a href="#about" data-link="about">about</a>
+  <a href="#projects" data-link="projects">projects</a>
+  <a href="#contact" data-link="contact">contact</a>
+</nav>
+
+<div class="glow" id="glow" aria-hidden="true"></div>
+
+<header id="home" class="hero relative pt-32 pb-16 px-6 text-center">
+  <div class="max-w-5xl mx-auto">
+    <span class="tag reveal">// welcome to my corner</span>
+    <h1 class="mt-6">
+      <span class="reveal" style="display:inline-block">Hello, friend!</span><br/>
+      <span class="reveal" style="display:inline-block">I am <span class="accent glitch" data-text="Okami">Okami</span>.</span>
+    </h1>
+
+    <div class="mt-10 reveal">
+      <div class="strip mx-auto max-w-2xl" aria-label="15 y.o. programmer">
+        <div class="track" id="track"></div>
+      </div>
+    </div>
+
+    <p class="mt-8 text-[color:var(--muted)] max-w-xl mx-auto">
+      <span class="typed" id="typed"></span>
+    </p>
+  </div>
+</header>
+
+<main class="relative px-6 pb-24">
+
+  <section id="about" class="max-w-6xl mx-auto">
+    <div class="glass p-8 md:p-12 grid md:grid-cols-[280px_1fr] gap-10 items-center reveal">
+      <div class="relative mx-auto md:mx-0">
+        <div class="pulse" aria-hidden="true"></div>
+        <div class="avatar-wrap" id="avatarWrap">
+          <img id="avatar" alt="OkamiCoder avatar" src="./assets/okami.jpg" />
+        </div>
+      </div>
+
+      <div>
+        <span class="tag">// about me</span>
+        <h2 class="section mt-3">Okami Coder</h2>
+        <p class="mt-5 text-[color:var(--muted)] leading-relaxed text-[15px]">
+          Hey! I'm a <b class="text-white">15 y.o. programmer</b> who loves turning coffee and curiosity
+          into clean code. I build web things, tinker with automation, and constantly learn new stacks.
+          Currently exploring modern JavaScript, UI/UX and open-source.
+          If it runs in a browser — I probably want to break it, then make it beautiful.
+        </p>
+
+        <div class="mt-6 flex flex-wrap gap-2">
+          <span class="tag">html</span>
+          <span class="tag">css</span>
+          <span class="tag">javascript</span>
+          <span class="tag">python</span>
+          <span class="tag">git</span>
+          <span class="tag">ui/ux</span>
+        </div>
+
+        <div id="contact" class="mt-8 flex items-center gap-3">
+          <a class="social magnetic" href="https://github.com/OkamiCoder" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a class="social magnetic" href="https://tiktok.com/@OkamiCoder" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a class="social magnetic" href="https://t.me/OkamiCoder" target="_blank" rel="noopener" aria-label="Telegram" title="Telegram">
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+          <a class="social magnetic" href="https://discord.com/users/OkamiCoder" target="_blank" rel="noopener" aria-label="Discord" title="Discord">
+            <i class="fa-brands fa-discord"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="max-w-6xl mx-auto mt-24">
+    <div class="flex items-end justify-between flex-wrap gap-4 reveal">
+      <div>
+        <span class="tag">// selected work</span>
+        <h2 class="section mt-3">Projects</h2>
+      </div>
+      <p class="text-[color:var(--muted)] text-sm max-w-md">
+        three templates ready to be filled — replace the banner, title, description and link whenever you want.
+      </p>
+    </div>
+
+    <div class="mt-10 grid md:grid-cols-3 gap-6">
+
+      <article class="project reveal" data-tilt>
+        <div class="banner-wrap"><img class="banner" id="banner1" alt="Project 1 banner" src="" /></div>
+        <div class="body">
+          <h3>Project One</h3>
+          <p>soon...</p>
+          <a class="link" href="https://github.com/OkamiCoder" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i> repository
+          </a>
+        </div>
+      </article>
+
+      <article class="project reveal" data-tilt>
+        <div class="banner-wrap"><img class="banner" id="banner2" alt="Project 2 banner" src="" /></div>
+        <div class="body">
+          <h3>Project Two</h3>
+          <p>soon...</p>
+          <a class="link" href="https://github.com/OkamiCoder" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i> repository
+          </a>
+        </div>
+      </article>
+
+      <article class="project reveal" data-tilt>
+        <div class="banner-wrap"><img class="banner" id="banner3" alt="Project 3 banner" src="" /></div>
+        <div class="body">
+          <h3>Project Three</h3>
+          <p>soon...</p>
+          <a class="link" href="https://github.com/OkamiCoder" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i> repository
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="border-t border-white/5 mt-10">
+  <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-[color:var(--muted)]">
+    <div>© <span id="year"></span> OkamiCoder — made with <span class="text-[color:var(--blue-2)]">♥</span> and too much caffeine.</div>
+    <div class="flex items-center gap-5">
+      <a href="https://github.com/OkamiCoder" target="_blank" rel="noopener">github</a>
+      <a href="https://t.me/OkamiCoder" target="_blank" rel="noopener">telegram</a>
+      <a href="#home">back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="script.js" defer></script>
+
+</body>
+</html>
