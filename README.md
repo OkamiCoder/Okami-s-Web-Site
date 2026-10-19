@@ -21,6 +21,6 @@ My portfolio website, showcasing my skills and contact information 💻
 ## 📂 How to run locally
 1. Clone the repository:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/OkamiCoder/Okami-s-Web-Site
    ```
 2. Open the `index.html` file in your browser (or use Live Server in VS Code).
