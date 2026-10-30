@@ -18,7 +18,7 @@ My portfolio website, showcasing my skills and contact information 💻
 - Optimized images for fast loading.
 - Configured semantic SEO framework.
 
-## 📂 How to run locally
+## 📂 How to run locally?
 1. Clone the repository:
    ```bash
    git clone https://github.com/OkamiCoder/Okami-s-Web-Site
